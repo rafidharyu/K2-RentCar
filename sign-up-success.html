@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - K2 RentCar Success</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="icon" href="src/assets/img/k2rentcar.png">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head> 
+<style>
+    .i {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .i i {
+        transition: .3s;
+    }
+
+    .input-div>div {
+        position: relative;
+        height: 45px;
+    }
+
+    .input-div>div>h5 {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff;
+        font-size: 18px;
+        transition: .3s;
+    }
+
+    .input-div:before,
+    .input-div:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 0%;
+        height: 2px;
+        background-color: #EB002B;
+        transition: .4s;
+    }
+
+    .input-div:before {
+        right: 50%;
+    }
+
+    .input-div:after {
+        left: 50%;
+    }
+
+    .input-div.focus:before,
+    .input-div.focus:after {
+        width: 50%;
+    }
+
+    .input-div.focus>div>h5 {
+        top: -5px;
+        font-size: 15px;
+    }
+
+    .input-div.focus>.i>i {
+        color: #EB002B;
+    }
+</style> 
+<body style="background-image: url(src/assets/img/login/bg-login.jpg);">
+    <div class="h-screen flex justify-center items-center">
+        <div class="bg-dongker rounded-2xl w-1/3 pt-10 pb-10 px-16 border-merah border-8">
+            <div class="flex justify-center">
+                <img class="h-28 w-24" src="src/assets/img/login/k2rentcar.png">
+            </div>
+            <div class="flex justify-center mt-20">
+                <img class="h-28 w-24" src="src/assets/img/login/Check Mark.png">
+            </div>
+            <h3 class="font-semibold text-white text-3xl mb-12 text-center mt-4">Registration Successfull</h3>
+            <div class="flex justify-center">
+                <a href="login.php"><button type="submit" class="w-40 py-2 rounded-lg bg-white text-dongker mx-auto hover:shadow-lg hover:opacity-50 duration-300 ease-in-out">Back to Login</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const inputs = document.querySelectorAll("input");
+
+
+        function addcl() {
+            let parent = this.parentNode.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function remcl() {
+            let parent = this.parentNode.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+        }
+
+
+        inputs.forEach(input => {
+            input.addEventListener("focus", addcl);
+            input.addEventListener("blur", remcl);
+        });
+    </script>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Car Details</title>
+</head>
+
+<body class="bg-gray-100 h-screen p-4">
+    <main class="h-full flex flex-col">
+        <div>
+            <button
+                class="w-24 py-2 mt-8 ml-16 text-current font-semibold bg-gray-300 hover:bg-gray-400 hover:text-current rounded-lg transition duration-300">Go
+                Back</button>
+        </div>
+        <div class="flex-1 flex items-center justify-center mt-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl p-4">
+                <div class="bg-gray-200 flex justify-center items-center p-4">
+                    <img src="Lexus CT 200h.png" alt="Toyota Avanza" class="w-full h-auto max-h-96">
+                </div>
+                <div class="bg-gray-100 p-8 flex flex-col justify-between">
+                    <div>
+                        <h1 class="font-semibold text-4xl">Lexus CT200H</h1>
+                        <div class="flex items-baseline mt-16">
+                            <h1 class="font-bold text-5xl">Rp.500k</h1>
+                            <span class="ml-32 text-lg text-gray-500">/Day</span>
+                        </div>
+                        <div class="flex items-center space-x-1 text-gray-600 mt-4">
+                            <img src="seat.png" alt="Seats" class="w-7 h-7">
+                            <span class="text-lg">5 Seats</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="w-96 py-2 mt-4 border border-1 border-current text-current text-2xl font-medium hover:bg-gray-400 hover:text-current transition duration-300 flex items-center justify-center">
+                            <img src="u_phone.png" alt="Phone Icon" class="w-5 h-5 mr-8 ">
+                            Rent Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-1 text-current mt-4 pl-32">
+            <img src="mesin.png" alt="Seats" class="w-16 h-16 bg-gray-300 rounded-full p-4">
+            <span class="text-xl flex justify-center items-center w-max h-10 bg-gray-300 rounded-2xl">
+                <span class="ml-10">Jenis Mesin :</span>
+                <span class="ml-96 mr-80">Matic</span>
+            </span>
+        </div>
+
+        <div class="flex items-center space-x-1 text-current mt-4 pl-32">
+            <img src="kecepatan.png" alt="Seats" class="w-16 h-16 bg-gray-300 rounded-full p-4">
+            <span class="text-xl flex justify-center items-center w-max h-10 bg-gray-300 rounded-2xl">
+                <span class="ml-10">Kecepatan Maksimal :</span>
+                <span class="ml-96 mr-52">180 km/h</span>
+            </span>
+        </div>
+
+        <div class="flex items-center space-x-1 text-current mt-4 pl-32">
+            <img src="mesin.png" alt="Seats" class="w-16 h-16 bg-gray-300 rounded-full p-4">
+            <span class="text-xl flex justify-center items-center w-max h-10 bg-gray-300 rounded-2xl">
+                <span class="ml-10">Jenis Bahan Bakar :</span>
+                <span class="ml-96 mr-48">Pertamax Plus</span>
+            </span>
+        </div>
+    </main>
+    <div>
+        <img src="Frame.png" alt="Frame" class=" w-full h-auto mt-20">
+    </div>
+</body>
+
+</html>

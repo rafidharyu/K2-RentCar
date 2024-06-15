@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/output.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<title>K2 RentCar - Customer Service</title>
+    <link rel="icon" href="src/assets/img/k2rentcar.png">
+</head>
+<body class="bg-slate-100">
+
+	<!-- SIDEBAR -->
+  <div class="fixed mt-12 pt-3 w-64 flex h-full" id="sidebar">
+    <div class="bg-dongker overflow-y-full flex flex-grow">
+        <nav class="space-y-3 px-4 mt-8">
+            <a href="AdminPesanan.html"
+                class="text-[#142445] bg-white flex items-center px-10 py-2 rounded-3xl transition duration-300 transform hover:text-white hover:bg-[#EB002B] hover:bg-opacity-100 hover:scale-105 hover:shadow-lg">
+                <span>Kelola Pesanan</span>
+            </a>
+            </a>
+            <a href="AdminKendaraan.php"
+                class="text-[#142445] bg-white flex items-center pl-10 px-10 py-2 rounded-3xl transition duration-300 transform hover:text-white hover:bg-[#EB002B] hover:bg-opacity-100 hover:scale-105 hover:shadow-lg">
+                <span>Kelola Kendaraan</span>
+            </a>
+            <a href="admin-CustomerService.html"
+                class="text-white bg-merah flex items-center px-10 py-2 rounded-3xl transition duration-300 transform hover:text-white hover:bg-[#EB002B] hover:bg-opacity-100 hover:scale-105 hover:shadow-lg">
+                <span>Customer Service</span>
+            </a>
+        </nav>
+    </div>
+</div>
+<!-- SIDEBAR -->
+
+<!-- CONTENT -->
+<section id="content">
+    <!-- navbar section start -->
+    <nav class="bg-white shadow-md ">
+        <div class="max-w-7xl">
+            <div class="fixed flex items-center justify-between h-16 w-full mb-10 bg-white">
+                <!-- Logo and Title -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-8 flex item-left" src="src/assets/img/k2rentcar.png" alt="LogoK2rentcar">
+                    <span class="ml-10 text-red-600 font-semibold text-lg">K2RentCar</span>
+                    <span class="ml-1 text-gray-700">Admin Menu</span>
+                </div>
+                <!-- User Info -->
+                <div class="ml-auto flex items-center">
+                    <span class="mr-2 text-gray-700">Admin A</span>
+                    <button class="flex-shrink-0 rounded-full p-2 focus:outline-none focus:bg-gray-300">
+                        <img class="h-10 w-10 rounded-full" src="src/assets/img/IconAcc.svg" alt="User Icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+        <!-- MAIN -->
+        <main class="bg-gray-100 flex items-center justify-center max-h-screen">
+          <div class="text-center">
+              <!-- Image Container -->
+              <div class="mt-32 mb-6 ml-60">
+                  <a href="https://wa.me/6281558921481">
+                    <img src="src/Wa.png" alt="WhatsApp Screenshot" class="border border-gray-300 shadow-2xl w-full h-80">
+                  </a>
+              </div>
+              <!-- Button -->
+              <button class="flex text-white text-sm font-bold py-2 px-4 mt-20 mb-10 ml-auto mr-52 bg-green-600 rounded-3xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75">
+                <a href="https://wa.me/6281558921481" class="flex ">
+                  <span>
+                    <img src="src/VectorWa.png" alt="" class="mr-2">
+                  </span>
+                  <span class="text-center">Open WhatsApp</span>
+                </a>
+              </button>
+          </div>
+        </main>
+	<!-- CONTENT -->
+
+	<script src="src/script.js"></script>
+</body>
+</html>

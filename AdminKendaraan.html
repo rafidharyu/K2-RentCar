@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/output.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<title>K2 RentCar - Kelola Kendaraan</title>
+    <link rel="icon" href="src/assets/img/k2rentcar.png">
+</head>
+<body class="bg-slate-100">
+
+	<!-- SIDEBAR -->
+    <div class="fixed mt-12 w-64 flex h-full" id="sidebar">
+        <div class="bg-dongker overflow-y-full flex flex-grow">
+            <nav class="space-y-3 px-2 mt-8">
+                <a href="AdminPesanan.html"
+                    class="text-[#142445] bg-white flex items-center px-10 py-2 rounded-3xl transition duration-300 transform hover:text-white hover:bg-[#EB002B] hover:bg-opacity-100 hover:scale-105 hover:shadow-lg">
+                    <span>Kelola Pesanan</span>
+                </a>
+                </a>
+                <a href="AdminKendaraan.html"
+                    class="text-white bg-merah flex items-center pl-10 px-10 py-2 rounded-3xl transition duration-300 transform hover:text-white hover:bg-[#EB002B] hover:bg-opacity-100 hover:scale-105 hover:shadow-lg">
+                    <span>Kelola Kendaraan</span>
+                </a>
+                <a href="admin-CustomerService.html"
+                    class="text-[#142445] bg-white flex items-center px-10 py-2 rounded-3xl transition duration-300 transform hover:text-white hover:bg-[#EB002B] hover:bg-opacity-100 hover:scale-105 hover:shadow-lg">
+                    <span>Customer Service</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- navbar section start -->
+        <nav class="bg-white shadow-md">
+            <div class="">
+                <div class="fixed flex items-center justify-between w-full bg-white">
+                    <!-- Logo and Title -->
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-8 flex item-left" src="src/assets/img/k2rentcar.png" alt="LogoK2rentcar">
+                        <span class="ml-10 text-red-600 font-semibold text-lg">
+                            <a href="dashboard.html">K2RentCar</a>
+                        </span>
+                        <span class="ml-1 text-gray-700">Admin Menu</span>
+                    </div>
+                    <!-- User Info -->
+                    <div class="ml-auto flex items-center">
+                        <span class="mr-2 text-gray-700">Admin A</span>
+                        <button class="flex-shrink-0 rounded-full p-2 focus:outline-none focus:bg-gray-300">
+                            <img class="h-10 w-10 rounded-full" src="src/assets/img/IconAcc.svg" alt="User Icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar section end -->
+
+        <!-- MAIN -->
+<!-- Table -->
+<div class="container bg-gray-300 py-6 px-4 h-full rounded-2xl w-full">
+    <!-- Search bar -->
+    <span>
+        <div class="flex justify-left space-x-4 mt-20 ml-60">
+            <div class="border-2 border-merah rounded-full flex items-center px-3 py-1 bg-white">
+                <input type="text" placeholder="Cari" class="outline-none text-gray-500 text-lg w-32">
+                <button type="submit" class="ml-2">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <button type="submit" class="ml-2 bg-merah text-white rounded-full px-4 py-2 hover:text-dongker hover:bg-white hover:border-2 border-dongker transition duration-300">
+                    Tambah+
+                </button>
+            </div>
+        </div>
+    </span>
+
+  <div class="overflow-x">
+        <table class="ml-60 mt-14 max-w-full bg-white border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="text-xs border p-2">No</th>
+                    <th class="text-xs border p-2">Gambar</th>
+                    <th class="text-xs border p-2">Nomor Polisi</th>
+                    <th class="text-xs border p-2">Model Kendaraan</th>
+                    <th class="text-xs border p-2">Jenis Mesin</th>
+                    <th class="text-xs border p-2">Kecepatan</th>
+                    <th class="text-xs border p-2">Jenis BBM</th>
+                    <th class="text-xs border p-2">Jumlah Kursi</th>
+                    <th class="text-xs border p-2">Harga/Hari</th>
+                    <th class="text-xs border p-2">Status</th>
+                    <th class="text-xs border p-2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+              <!-- Pertama -->
+                <tr>
+                    <td class="text-xs border p-2">1.</td>
+                    <td class="text-xs border p-2 w-20 h-20">
+                      <img src="src/assets/img/mobil/Lexus CT 200h.svg" alt="">
+                    </td>
+                    <td class="text-xs border p-2">AA0001AA</td>
+                    <td class="text-xs border p-2">Lexus CT200H</td>
+                    <td class="text-xs border p-2">Matic</td>
+                    <td class="text-xs border p-2">180 km/jam</td>
+                    <td class="text-xs border p-2">Pertalite Plus</td>
+                    <td class="text-xs border p-2">5</td>
+                    <td class="text-xs border p-2">Rp.500.000</td>
+                    <td class="text-xs border p-2">
+                        <select class="bg-dongker text-white py-1 px-2 rounded">
+                            <option value="disewa" selected>Tersedia</option>
+                            <option value="dipesan">Tidak Tersedia</option>
+                        </select>
+                    </td>
+                    <td class="border p-4 flex">
+                        <span>
+                            <button class="py-1 px-2 rounded mr-0.5">
+                                <img src="src/VectorEdit.png" alt="Edit">
+                            </button>
+                        </span>
+                        <span>
+                            <button class="py-1 px-2 rounded">
+                                <img src="src/VectorDelete.png" alt="Delete">
+                            </button>
+                        </span>
+                    </td>
+                </tr>
+
+                <!-- Kedua -->
+                <tr>
+                  <td class="text-xs border p-2">2.</td>
+                  <td class="text-xs border p-2">
+                    <img src="src/assets/img/mobil/Toyota Avanza.png" alt="">
+                  </td>
+                  <td class="text-xs border p-2">AA0002AA</td>
+                  <td class="text-xs border p-2">Toyota Avanza</td>
+                  <td class="text-xs border p-2">Manual</td>
+                  <td class="text-xs border p-2">180 km/jam</td>
+                  <td class="text-xs border p-2">Pertalite Plus</td>
+                  <td class="text-xs border p-2">7</td>
+                  <td class="text-xs border p-2">Rp. 500.000</td>
+                  <td class="text-xs border p-2">
+                      <select class="bg-dongker text-white py-1 px-2 rounded">
+                          <option value="disewa" selected>Tersedia</option>
+                          <option value="dipesan">Tidak Tersedia</option>
+                      </select>
+                  </td>
+                  <td class="border p-2 flex">
+                      <span>
+                          <button class="py-1 px-2 rounded mr-0.5">
+                              <img src="src/VectorEdit.png" alt="Edit">
+                          </button>
+                      </span>
+                      <span>
+                          <button class="py-1 px-2 rounded">
+                              <img src="src/VectorDelete.png" alt="Delete">
+                          </button>
+                      </span>
+                  </td>
+              </tr>
+
+              <!-- Ketiga -->
+              <tr>
+                <td class="text-xs border p-2">3.</td>
+                <td class="text-xs border p-2">
+                  <img src="src/assets/img/mobil/SuzukiErtiga.svg" alt="">
+                </td>
+                <td class="text-xs border p-2">AA0003AA</td>
+                <td class="text-xs border p-2">Suzuki Ertiga</td>
+                <td class="text-xs border p-2">Manual</td>
+                <td class="text-xs border p-2">180 km/jam</td>
+                <td class="text-xs border p-2">Pertalite Plus</td>
+                <td class="text-xs border p-2">5</td>
+                <td class="text-xs border p-2">Rp. 500.000</td>
+                <td class="text-xs border p-2">
+                    <select class="bg-dongker text-white py-1 px-2 rounded">
+                        <option value="disewa" selected>Tersedia</option>
+                        <option value="dipesan">Tidak Tersedia</option>
+                    </select>
+                </td>
+                <td class="border p-2 flex">
+                    <span>
+                        <button class="py-1 px-2 rounded mr-0.5">
+                            <img src="src/VectorEdit.png" alt="Edit">
+                        </button>
+                    </span>
+                    <span>
+                        <button class="py-1 px-2 rounded">
+                            <img src="src/VectorDelete.png" alt="Delete">
+                        </button>
+                    </span>
+                </td>
+            </tr>
+
+            <!-- Keempat -->
+            <tr>
+              <td class="text-xs border p-2">4.</td>
+              <td class="text-xs border p-2">
+                <img src="src/assets/img/mobil/Innova Venturer.png" alt="">
+              </td>
+              <td class="text-xs border p-2">AA0004AA</td>
+              <td class="text-xs border p-2">Innova Venturer</td>
+              <td class="text-xs border p-2">Manual</td>
+              <td class="text-xs border p-2">180 km/jam</td>
+              <td class="text-xs border p-2">Pertamax Plus</td>
+              <td class="text-xs border p-2">6</td>
+              <td class="text-xs border p-2">Rp. 750.000</td>
+              <td class="text-xs border p-2">
+                  <select class="bg-dongker text-white py-1 px-2 rounded">
+                      <option value="Tersedia" selected>Tersedia</option>
+                      <option value="Tidak Tersedia">Tidak Tersedia</option>
+                  </select>
+              </td>
+              <td class="border p-2 flex">
+                  <span>
+                      <button class="py-1 px-2 rounded mr-0.5">
+                          <img src="src/VectorEdit.png" alt="Edit">
+                      </button>
+                  </span>
+                  <span>
+                      <button class="py-1 px-2 rounded">
+                          <img src="src/VectorDelete.png" alt="Delete">
+                      </button>
+                  </span>
+              </td>
+          </tr>
+
+          <!-- Kelima -->
+          <tr>
+            <td class="text-xs border p-2">5.</td>
+            <td class="text-xs border p-2">
+              <img src="src/assets/img/mobil/Marcedes Benz.svg" alt="">
+            </td>
+            <td class="text-xs border p-2">AA0005AA</td>
+            <td class="text-xs border p-2">Marcedes Benz</td>
+            <td class="text-xs border p-2">Manual</td>
+            <td class="text-xs border p-2">180 km/jam</td>
+            <td class="text-xs border p-2">Pertamax Plus</td>
+            <td class="text-xs border p-2">4</td>
+            <td class="text-xs border p-2">Rp. 990.000</td>
+            <td class="text-xs border p-2">
+                <select class="bg-dongker text-white py-1 px-2 rounded">
+                  <option value="Tersedia" selected>Tersedia</option>
+                  <option value="Tidak Tersedia">Tidak Tersedia</option>
+                </select>
+            </td>
+            <td class="border p-2 flex">
+                <span>
+                    <button class="py-1 px-2 rounded mr-0.5">
+                        <img src="src/VectorEdit.png" alt="Edit">
+                    </button>
+                </span>
+                <span>
+                    <button class="py-1 px-2 rounded">
+                        <img src="src/VectorDelete.png" alt="Delete">
+                    </button>
+                </span>
+            </td>
+        </tr>
+
+        <!-- Keenam -->
+        <tr>
+          <td class="text-xs border p-2">6.</td>
+          <td class="text-xs border p-2">
+            <img src="src/assets/img/mobil/Jaguar F-Pace.svg" alt="">
+          </td>
+          <td class="text-xs border p-2">AA0006AA</td>
+          <td class="text-xs border p-2">Jaguar F-Pace</td>
+          <td class="text-xs border p-2">Manual</td>
+          <td class="text-xs border p-2">180 km/jam</td>
+          <td class="text-xs border p-2">Pertamax Plus</td>
+          <td class="text-xs border p-2">5</td>
+          <td class="text-xs border p-2">Rp. 750.000</td>
+          <td class="text-xs border p-2">
+              <select class="bg-dongker text-white py-1 px-2 rounded">
+                <option value="Tersedia" selected>Tersedia</option>
+                <option value="Tidak Tersedia">Tidak Tersedia</option>
+              </select>
+          </td>
+          <td class="border p-2 flex">
+              <span>
+                  <button class="py-1 px-2 rounded mr-0.5">
+                      <img src="src/VectorEdit.png" alt="Edit">
+                  </button>
+              </span>
+              <span>
+                  <button class="py-1 px-2 rounded">
+                      <img src="src/VectorDelete.png" alt="Delete">
+                  </button>
+              </span>
+          </td>
+      </tr>
+
+      <!-- Ketujuh -->
+      <tr>
+        <td class="text-xs border p-2">7.</td>
+        <td class="text-xs border p-2">
+          <img src="src/assets/img/mobil/Daihatsu Terios.png" alt="">
+        </td>
+        <td class="text-xs border p-2">AA0007AA</td>
+        <td class="text-xs border p-2">Daihatsu Terios</td>
+        <td class="text-xs border p-2">Manual</td>
+        <td class="text-xs border p-2">180 km/jam</td>
+        <td class="text-xs border p-2">Pertamax Plus</td>
+        <td class="text-xs border p-2">6</td>
+        <td class="text-xs border p-2">Rp. 550.000</td>
+        <td class="text-xs border p-2">
+            <select class="bg-dongker text-white py-1 px-2 rounded">
+              <option value="Tersedia" selected>Tersedia</option>
+              <option value="Tidak Tersedia">Tidak Tersedia</option>
+            </select>
+        </td>
+        <td class="border p-2 flex">
+            <span>
+                <button class="py-1 px-2 rounded mr-0.5">
+                    <img src="src/VectorEdit.png" alt="Edit">
+                </button>
+            </span>
+            <span>
+                <button class="py-1 px-2 rounded">
+                    <img src="src/VectorDelete.png" alt="Delete">
+                </button>
+            </span>
+        </td>
+    </tr>
+
+    <!-- Kedelapan -->
+    <tr>
+      <td class="text-xs border p-2">8.</td>
+      <td class="text-xs border p-2">
+        <img src="src/assets/img/mobil/ToyotaAlphard.png" alt="">
+      </td>
+      <td class="text-xs border p-2">AA0008AA</td>
+      <td class="text-xs border p-2">Toyota Alphard</td>
+      <td class="text-xs border p-2">Manual</td>
+      <td class="text-xs border p-2">180 km/jam</td>
+      <td class="text-xs border p-2">Pertamax Plus</td>
+      <td class="text-xs border p-2">7</td>
+      <td class="text-xs border p-2">Rp. 1.000.000</td>
+      <td class="text-xs border p-2">
+          <select class="bg-dongker text-white py-1 px-2 rounded">
+            <option value="Tersedia" selected>Tersedia</option>
+            <option value="Tidak Tersedia">Tidak Tersedia</option>
+          </select>
+      </td>
+      <td class="border p-2 flex">
+          <span>
+              <button class="py-1 px-2 rounded mr-0.5">
+                  <img src="src/VectorEdit.png" alt="Edit">
+              </button>
+          </span>
+          <span>
+              <button class="py-1 px-2 rounded">
+                  <img src="src/VectorDelete.png" alt="Delete">
+              </button>
+          </span>
+      </td>
+  </tr>
+
+  <!-- Kesembilan -->
+  <tr>
+    <td class="text-xs border p-2">9.</td>
+    <td class="text-xs border p-2">
+      <img src="src/assets/img/mobil/Mitsubishi Xpander.png" alt="">
+    </td>
+    <td class="text-xs border p-2">AA0009AA</td>
+    <td class="text-xs border p-2">Mitsubishi X-pander</td>
+    <td class="text-xs border p-2">Manual</td>
+    <td class="text-xs border p-2">180 km/jam</td>
+    <td class="text-xs border p-2">Pertamax Plus</td>
+    <td class="text-xs border p-2">6</td>
+    <td class="text-xs border p-2">Rp. 750.000</td>
+    <td class="text-xs border p-2">
+        <select class="bg-dongker text-white py-1 px-2 rounded">
+          <option value="Tersedia" selected>Tersedia</option>
+          <option value="Tidak Tersedia">Tidak Tersedia</option>
+        </select>
+    </td>
+    <td class="border p-2 flex">
+        <span>
+            <button class="py-1 px-2 rounded mr-0.5">
+                <img src="src/VectorEdit.png" alt="Edit">
+            </button>
+        </span>
+        <span>
+            <button class="py-1 px-2 rounded">
+                <img src="src/VectorDelete.png" alt="Delete">
+            </button>
+        </span>
+    </td>
+</tr>
+	<!-- CONTENT -->
+
+	<script src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Mengatur tinggi elemen pembungkus */
+  }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/output.css">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<title>AdminHub</title>
+</head>
+<body class="bg-light font-lato">
+
+	<!-- SIDEBAR -->
+<div class="fixed mt-32 pt-3 w-64 flex h-full" id="sidebar">
+    <div class="bg-merah overflow-y-auto flex flex-col flex-grow pt-5">
+        <nav class="space-y-3 px-4 mt-5">
+            <a href="#" class="text-gray-200 flex items-center space-x-3 p-2 rounded-lg bg-dongker">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </div>
+                <span>Dashboard</span>
+            </a>
+            </a>
+            <a href="#" class="text-gray-200 flex items-center space-x-3 p-2 rounded-lg hover:bg-indigo-800">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                    </svg>
+                </div>
+                <span>Pemesanan</span>
+            </a>
+        </nav>
+    </div>
+</div>
+<div class="fixed bottom-0 w-64 h-40 flex" id="sidebar">
+    <div class="bg-white overflow-y-auto flex flex-col flex-grow">
+        <nav class="py-2 px-1">
+            <a href="#" class="text-dongker flex items-center space-x-3 p-2 rounded-lg border-2 border-abu">
+                <div>
+                    <img src="src/assets/img/setting.svg" alt="">
+                </div>
+                <span>Setting</span>
+            </a>
+            <div class="absolute items-center justify-start px-4 py-4 bottom-0">
+                <p class="font-normal text-black text-start text-xs">© 2023 Kelompok2.</p>
+            </div>
+        </nav>
+    </div>
+</div>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- navbar section start -->
+        <header class="fixed bg-white w-full flex z-10 items-center shadow-lg border-b border-black">
+            <div class="ps-10">
+                <a href="#"><img src="src/assets/img/k2rentcar.png" alt="k2rentcar" class="w-20"></a>
+            </div>
+            <div class="flex-row w-full ps-14">
+                <div class="relative bg-dongker rounded-bl-full flex">
+                    <div class="absolute ps-16 top-[13px] block max-w-full w-1/4">
+                      <img src="src/assets/img/navbar/mail.svg" alt="">
+                    </div>
+                    <div class="py-4 top-full block static max-w-full w-1/4">
+                        <p class="font-normal text-slate-100 ps-28">k2rentcar@support.com</p>
+                    </div>
+                    <div class="absolute ps-72 ms-16 top-[13px] block max-w-full w-1/4">
+                      <img src="src/assets/img/navbar/jam.svg" alt="">
+                    </div>
+                    <div class="py-4 w-full top-full block static max-w-full">
+                        <p class="font-normal text-slate-100 ps-28">Mon to Fri: 9:00am to 6:00pm</p>
+                    </div>
+                    <div class="w-1/4 me-6 flex">
+                        <div class="absolute ms-6 top-[14px]">
+                            <img src="src/assets/img/navbar/profile.svg" alt="">
+                          </div>
+                        <a href="login.html" target="_blank" class="text-sm font-medium text-white bg-merah px-12 py-5"><span class="text-merah">__</span>Login</a>
+                    </div>
+            </div>
+            <div class="items-center ps-14 justify-between relative bg-white">
+                <div class="flex items-center">
+                    <h3 class="font-normal text-2xl text-dongker uppercase w-1/3 text-center">k2 rent car</h3>
+                    <nav id="nav-menu" class="py-5 rounded-none max-w-full w-full right-4 top-full block static bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#" class="text-base text-transparent py-2 mx-5 flex">.</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="w-1/3 top-full block static max-w-full">
+                        <div class="absolute ps-4 top-[26px]">
+                            <img src="src/assets/img/navbar/telpon.svg" alt="">
+                          </div>
+                        <a href="tel:+628123456789" target="_blank" class="text-sm text-center font-medium text-dongker border-2 border-dongker px-6 py-5 w-1/4 rounded-full"><span class="text-white">____</span>+62 815-5892-1481</a>
+                    </div>
+                    <div class="w-1/3 me-10 top-full block static max-w-full">
+                        <div class="absolute ps-6 top-[26px]">
+                            <img src="src/assets/img/navbar/chat.svg" alt="">
+                          </div>
+                        <a href="https://wa.me/6281558921481" target="_blank" class="text-sm text-center font-medium text-white bg-green-600 px-7 py-5 w-1/4 rounded-full"><span class="text-green-600">_____</span>Chat WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    <!-- navbar section end -->
+
+        <!-- MAIN -->
+		<main class="absolute start-80 top-44 pr-20">
+			<div class="head-title flex justify-between items-center">
+				<div class="left">
+					<h1 class="text-2xl font-bold text-dongker">Dashboard</h1>
+				</div>
+			</div>
+
+            <div class="bg-dongker w-full py-28 px-[550px] border-merah border-8 rounded-tl-2xl rounded-bl-2xl rounded-tr-full rounded-br-full">
+            </div>            
+            
+			<ul class="box-info grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+				<li class="bg-white p-4 rounded-lg shadow">
+					<i class='bx bxs-calendar-check text-2xl'></i>
+					<span class="text">
+						<h3 class="text-xl font-semibold">1020</h3>
+						<p>New Order</p>
+					</span>
+				</li>
+				<li class="bg-white p-4 rounded-lg shadow">
+					<i class='bx bxs-group text-2xl'></i>
+					<span class="text">
+						<h3 class="text-xl font-semibold">2834</h3>
+						<p>Visitors</p>
+					</span>
+				</li>
+				<li class="bg-white p-4 rounded-lg shadow">
+					<i class='bx bxs-dollar-circle text-2xl'></i>
+					<span class="text">
+						<h3 class="text-xl font-semibold">$2543</h3>
+						<p>Total Sales</p>
+					</span>
+				</li>
+			</ul>
+			<ul class="box-info grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+				<li class="bg-white p-4 rounded-lg shadow">
+					<i class='bx bxs-calendar-check text-2xl'></i>
+					<span class="text">
+						<h3 class="text-xl font-semibold">1020</h3>
+						<p>New Order</p>
+					</span>
+				</li>
+				<li class="bg-white p-4 rounded-lg shadow">
+					<i class='bx bxs-group text-2xl'></i>
+					<span class="text">
+						<h3 class="text-xl font-semibold">2834</h3>
+						<p>Visitors</p>
+					</span>
+				</li>
+				<li class="bg-white p-4 rounded-lg shadow">
+					<i class='bx bxs-dollar-circle text-2xl'></i>
+					<span class="text">
+						<h3 class="text-xl font-semibold">$2543</h3>
+						<p>Total Sales</p>
+					</span>
+				</li>
+			</ul>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+	<script src="src/script.js"></script>
+</body>
+</html>
